@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Your Contacts</title>
+  </head>
+  <body>
+    <h1>Your Contacts</h1>
+    <ul>
+      @foreach(var Contact in Model)
+      {
+        <li><a href="/@Contact.GetContact()">@Contact.GetContact()</a></li>
+      }
+    </ul>
+    <a href="/">Home</a>
+    <a href="/search_form">Search for Contact</a>
+  </body>
+</html>
